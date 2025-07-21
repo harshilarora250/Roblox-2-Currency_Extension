@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      width: 300px;
+      padding: 15px;
+    }
+    h2 {
+      margin-top: 0;
+    }
+    .section {
+      margin-bottom: 10px;
+    }
+    button {
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      border: none;
+      color: white;
+      padding: 8px;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+    }
+    canvas {
+      width: 100% !important;
+      height: 200px !important;
+    }
+  </style>
+</head>
+<body>
+  <h2>📊 Roblox Analytics</h2>
+  <div class="section">
+    <p>Game: <span id="gameName">Loading...</span></p>
+    <p>👥 Players: <span id="popupPlayers">...</span></p>
+    <p>📈 Visits Today: <span id="popupVisits">...</span></p>
+    <p>💸 Revenue Est.: $<span id="popupRevenue">...</span></p>
+    <p>🤑 DevEx Eligible: <span id="popupDevex">...</span></p>
+  </div>
+  <div class="section">
+    <canvas id="playerChart"></canvas>
+  </div>
+  <button id="exportBtn">Export CSV</button>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
